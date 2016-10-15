@@ -1,0 +1,14 @@
+Import('env')
+
+CPP_FILES = [
+    'BooleanVariable.cpp',
+    'Clause.cpp',
+    'Literal.cpp',
+    'GenerateOptions.cpp',
+    'ProgramArguments.cpp',
+    'RandomKSatFormula.cpp',
+    'satpi.cpp'
+  ]
+
+env.Append(CPPPATH=['../'])
+env.Program('satpi', CPP_FILES, LIBS=[], LIBPATH=[])
