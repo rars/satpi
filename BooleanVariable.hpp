@@ -13,22 +13,22 @@
 
 namespace satpi
 {
-	class BooleanVariable
-	{
-	public:
-		BooleanVariable(const std::uint32_t id);
-		virtual ~BooleanVariable();
+    class BooleanVariable
+    {
+    public:
+        BooleanVariable(const std::uint32_t id);
+        virtual ~BooleanVariable();
 
         long GetId() const;
-		bool IsSet() const;
-		bool GetValue() const;
-		void SetValue(const bool& value);
+        bool IsSet() const;
+        bool GetValue() const;
+        void SetValue(const bool& value);
 
-	private:
+    private:
         std::uint32_t m_id;
-		bool m_isSet;
-		bool m_value;
-	};
+        bool m_isSet;
+        bool m_value;
+    };
 }
 
 #endif /* SATPI_BOOLEANVARIABLE_HPP */

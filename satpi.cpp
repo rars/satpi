@@ -46,7 +46,7 @@ int main(const int argc, const char* argv[])
         if (programArguments->GetCommand() == "generate")
         {
             satpi::GenerateOptions options(programArguments);
-            
+
             satpi::RandomKSatFormula formula(
                 options.NumVariables,
                 options.LiteralsPerClause,

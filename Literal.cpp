@@ -8,8 +8,8 @@
 namespace satpi
 {
     Literal::Literal(
-            const bool isNegated,
-            const std::shared_ptr<BooleanVariable>& variable)
+        const bool isNegated,
+        const std::shared_ptr<BooleanVariable>& variable)
         : m_isNegated(isNegated), m_variable(variable)
     {}
 
@@ -32,7 +32,7 @@ namespace satpi
         {
             std::stringstream ss;
             ss << "Attempted to GetValue of unset variable with id '"
-               << m_variable->GetId() << "'";
+                << m_variable->GetId() << "'";
             throw std::runtime_error(ss.str());
         }
 

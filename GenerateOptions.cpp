@@ -9,7 +9,7 @@ namespace satpi
     GenerateOptions::GenerateOptions(
         const std::shared_ptr<ProgramArguments>& programArguments)
         : NumVariables(std::stoul(programArguments->GetOptionValue("-numVariables"))),
-          LiteralsPerClause(std::stoul(programArguments->GetOptionValue("-literalsPerClause"))),
-          ClausesPerVariableRatio(std::stod(programArguments->GetOptionValue("-clausesPerVariableRatio")))
+        LiteralsPerClause(std::stoul(programArguments->GetOptionValue("-literalsPerClause"))),
+        ClausesPerVariableRatio(std::stod(programArguments->GetOptionValue("-clausesPerVariableRatio")))
     {}
 }

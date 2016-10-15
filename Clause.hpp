@@ -18,20 +18,20 @@ namespace satpi
 {
     class Literal;
 
-	class Clause
-	{
-	public:
+    class Clause
+    {
+    public:
         typedef std::shared_ptr<Literal> LiteralPtr;
 
-		Clause(const std::uint32_t id, std::vector<LiteralPtr>&& literals);
-		virtual ~Clause();
+        Clause(const std::uint32_t id, std::vector<LiteralPtr>&& literals);
+        virtual ~Clause();
 
         const std::vector<LiteralPtr>& GetLiterals() const;
 
-	private:
+    private:
         std::uint32_t m_id;
         std::vector<LiteralPtr> m_literals;
-	};
+    };
 }
 
 #endif /* SATPI_CLAUSE_HPP */

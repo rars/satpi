@@ -25,8 +25,8 @@ namespace satpi
         {
             std::stringstream ss;
             ss << "Attempted to choose " << numElements
-               << " from a collection containing only " << collection.size()
-               << " elements.";
+                << " from a collection containing only " << collection.size()
+                << " elements.";
             throw std::runtime_error(ss.str());
         }
 
@@ -44,7 +44,7 @@ namespace satpi
             }
             result.push_back(collection[index]);
         }
-        
+
         return result;
     }
 }
