@@ -145,25 +145,25 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Clause.hpp" />
-    <ClInclude Include="GenerateOptions.hpp" />
-    <ClInclude Include="Literal.hpp" />
-    <ClInclude Include="ProgramArguments.hpp" />
-    <ClInclude Include="RandomKSatFormula.hpp" />
-    <ClInclude Include="stdafx.h" />
-    <ClInclude Include="targetver.h" />
-    <ClInclude Include="BooleanVariable.hpp" />
-    <ClInclude Include="Utility.hpp" />
+    <ClCompile Include="src\BooleanVariable.cpp" />
+    <ClCompile Include="src\Clause.cpp" />
+    <ClCompile Include="src\GenerateOptions.cpp" />
+    <ClCompile Include="src\Literal.cpp" />
+    <ClCompile Include="src\ProgramArguments.cpp" />
+    <ClCompile Include="src\RandomKSatFormula.cpp" />
+    <ClCompile Include="src\satpi.cpp" />
+    <ClCompile Include="src\stdafx.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Clause.cpp" />
-    <ClCompile Include="GenerateOptions.cpp" />
-    <ClCompile Include="Literal.cpp" />
-    <ClCompile Include="ProgramArguments.cpp" />
-    <ClCompile Include="RandomKSatFormula.cpp" />
-    <ClCompile Include="satpi.cpp" />
-    <ClCompile Include="stdafx.cpp" />
-    <ClCompile Include="BooleanVariable.cpp" />
+    <ClInclude Include="src\BooleanVariable.hpp" />
+    <ClInclude Include="src\Clause.hpp" />
+    <ClInclude Include="src\GenerateOptions.hpp" />
+    <ClInclude Include="src\Literal.hpp" />
+    <ClInclude Include="src\ProgramArguments.hpp" />
+    <ClInclude Include="src\RandomKSatFormula.hpp" />
+    <ClInclude Include="src\stdafx.h" />
+    <ClInclude Include="src\targetver.h" />
+    <ClInclude Include="src\Utility.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
