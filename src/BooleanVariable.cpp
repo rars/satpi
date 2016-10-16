@@ -13,7 +13,7 @@ namespace satpi
     BooleanVariable::~BooleanVariable()
     {}
 
-    long BooleanVariable::GetId() const
+    std::uint32_t BooleanVariable::GetId() const
     {
         return m_id;
     }

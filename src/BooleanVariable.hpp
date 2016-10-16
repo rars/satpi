@@ -19,7 +19,7 @@ namespace satpi
         BooleanVariable(const std::uint32_t id);
         virtual ~BooleanVariable();
 
-        long GetId() const;
+        std::uint32_t GetId() const;
         bool IsSet() const;
         bool GetValue() const;
         void SetValue(const bool& value);

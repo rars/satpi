@@ -102,4 +102,14 @@ namespace satpi
         ofs.close();
         std::cout << "Save complete" << std::endl;
     }
+
+    const std::vector<std::shared_ptr<Clause>>& RandomKSatFormula::GetClauses() const
+    {
+        return m_clauses;
+    }
+
+    const std::vector<std::shared_ptr<BooleanVariable>>& RandomKSatFormula::GetVariables() const
+    {
+        return m_variables;
+    }
 }

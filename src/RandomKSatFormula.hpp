@@ -28,6 +28,8 @@ namespace satpi
         virtual ~RandomKSatFormula();
 
         void Save(const std::string& filepath) const;
+        const std::vector<std::shared_ptr<Clause>>& GetClauses() const;
+        const std::vector<std::shared_ptr<BooleanVariable>>& GetVariables() const;
 
     private:
         void GenerateRandomKSat(

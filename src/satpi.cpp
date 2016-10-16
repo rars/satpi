@@ -7,6 +7,7 @@
 #include "RandomKSatFormula.hpp"
 #include "ProgramArguments.hpp"
 #include "GenerateOptions.hpp"
+#include "FactorGraph.hpp"
 
 #include <random>
 #include <iostream>
@@ -51,6 +52,9 @@ int main(const int argc, const char* argv[])
                 options.NumVariables,
                 options.LiteralsPerClause,
                 options.ClausesPerVariableRatio);
+
+            satpi::FactorGraph factorGraph(formula.GetVariables(), formula.GetClauses());
+            factorGraph.RunSurveyPropagation("testSeedValue");
 
             formula.Save(options.OutputFilepath);
         }

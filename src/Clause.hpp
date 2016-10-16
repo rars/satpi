@@ -26,6 +26,7 @@ namespace satpi
         Clause(const std::uint32_t id, std::vector<LiteralPtr>&& literals);
         virtual ~Clause();
 
+        std::uint32_t GetId() const;
         const std::vector<LiteralPtr>& GetLiterals() const;
 
     private:

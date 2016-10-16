@@ -12,6 +12,11 @@ namespace satpi
     Clause::~Clause()
     {}
 
+    std::uint32_t Clause::GetId() const
+    {
+        return m_id;
+    }
+
     const std::vector<Clause::LiteralPtr>& Clause::GetLiterals() const
     {
         return m_literals;

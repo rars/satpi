@@ -147,23 +147,30 @@
   <ItemGroup>
     <ClCompile Include="src\BooleanVariable.cpp" />
     <ClCompile Include="src\Clause.cpp" />
+    <ClCompile Include="src\FactorGraph.cpp" />
+    <ClCompile Include="src\FactorNode.cpp" />
     <ClCompile Include="src\GenerateOptions.cpp" />
     <ClCompile Include="src\Literal.cpp" />
     <ClCompile Include="src\ProgramArguments.cpp" />
     <ClCompile Include="src\RandomKSatFormula.cpp" />
     <ClCompile Include="src\satpi.cpp" />
     <ClCompile Include="src\stdafx.cpp" />
+    <ClCompile Include="src\VariableNode.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\BooleanVariable.hpp" />
     <ClInclude Include="src\Clause.hpp" />
+    <ClInclude Include="src\FactorGraph.hpp" />
+    <ClInclude Include="src\FactorNode.hpp" />
     <ClInclude Include="src\GenerateOptions.hpp" />
     <ClInclude Include="src\Literal.hpp" />
     <ClInclude Include="src\ProgramArguments.hpp" />
     <ClInclude Include="src\RandomKSatFormula.hpp" />
     <ClInclude Include="src\stdafx.h" />
+    <ClInclude Include="src\Survey.hpp" />
     <ClInclude Include="src\targetver.h" />
     <ClInclude Include="src\Utility.hpp" />
+    <ClInclude Include="src\VariableNode.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

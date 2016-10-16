@@ -3,11 +3,13 @@ Import('env')
 CPP_FILES = [
     'BooleanVariable.cpp',
     'Clause.cpp',
+    'FactorNode.cpp',
     'Literal.cpp',
     'GenerateOptions.cpp',
     'ProgramArguments.cpp',
     'RandomKSatFormula.cpp',
-    'satpi.cpp'
+    'satpi.cpp',
+    'VariableNode.cpp'
   ]
 
 env.Append(CPPPATH=['../'])
