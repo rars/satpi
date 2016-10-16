@@ -11,6 +11,7 @@
 
 #include <cstdint>
 #include <memory>
+#include <string>
 
 namespace satpi
 {
@@ -24,6 +25,7 @@ namespace satpi
         const std::uint32_t NumVariables;
         const std::uint32_t LiteralsPerClause;
         const double ClausesPerVariableRatio;
+        const std::string OutputFilepath;
     };
 }
 

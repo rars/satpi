@@ -52,7 +52,7 @@ int main(const int argc, const char* argv[])
                 options.LiteralsPerClause,
                 options.ClausesPerVariableRatio);
 
-            formula.Save("test.cnf");
+            formula.Save(options.OutputFilepath);
         }
         else
         {
