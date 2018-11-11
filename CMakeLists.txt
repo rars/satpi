@@ -4,3 +4,5 @@ project (satpi)
 file(GLOB SOURCES "src/*.cpp")
 
 add_executable(satpi ${SOURCES})
+
+install(TARGETS satpi DESTINATION bin)
